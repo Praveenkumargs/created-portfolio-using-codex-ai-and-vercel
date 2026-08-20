@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Praveen Kumar — aspiring web developer building thoughtful web experiences." />
+    <title>Praveen Kumar · Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="nav wrap">
+      <a class="brand" href="#top" aria-label="Home">PK<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-github" href="https://github.com/Praveenkumargs" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap">
+        <div class="eyebrow"><i></i> Available for opportunities</div>
+        <p class="intro">Hello, I’m</p>
+        <h1>Praveen<br /><em>Kumar G S.</em></h1>
+        <div class="hero-bottom">
+          <p>I’m an aspiring web developer turning ideas into clean, responsive experiences—one project at a time.</p>
+          <a href="#work" class="circle-link" aria-label="See my work">↓</a>
+        </div>
+        <div class="toolkit" aria-label="Skills: HTML, CSS, JavaScript, and Node.js">
+          <p>Building with</p>
+          <div class="tool-list"><span>HTML<sup>01</sup></span><span>CSS<sup>02</sup></span><span>JavaScript<sup>03</sup></span><span>Node.js<sup>04</sup></span></div>
+        </div>
+      </section>
+
+      <section id="about" class="about wrap section">
+        <p class="section-label">01 / ABOUT</p>
+        <div>
+          <h2>Curious by nature.<br />Practical by <em>design.</em></h2>
+          <p class="body-copy">I’m at the beginning of my professional journey, with no company experience yet—and that makes my projects especially important to me. They’re where I learn by building: responsive layouts, interactive JavaScript, API-driven features, and simple Node.js tools.</p>
+          <div class="skills"><span>Responsive UI</span><span>REST APIs</span><span>jQuery</span><span>Git & GitHub</span></div>
+        </div>
+      </section>
+
+      <section id="work" class="work wrap section">
+        <div class="work-heading"><p class="section-label">02 / SELECTED WORK</p><p>Things I’ve made while learning the web.</p></div>
+        <div class="projects">
+          <article class="project featured">
+            <div class="project-art weather"><span class="sun"></span><span class="cloud"></span><small>27°<br />Chennai</small></div>
+            <div class="project-info"><div><p class="project-number">01</p><h3>Weather App</h3><p>Live weather lookups using the OpenWeather API, built with HTML, CSS, Flexbox, and jQuery.</p></div><a href="https://github.com/Praveenkumargs/WeatherApp" target="_blank" rel="noreferrer">View source ↗</a></div>
+          </article>
+          <article class="project">
+            <div class="project-art qr"><div class="qr-grid">▦</div><small>link → code</small></div>
+            <div class="project-info"><div><p class="project-number">02</p><h3>QR Generator</h3><p>A Node.js utility that turns a URL into a scannable QR image.</p></div><a href="https://github.com/Praveenkumargs/QR-Image-Generator-Using-NodeJS" target="_blank" rel="noreferrer">View source ↗</a></div>
+          </article>
+          <article class="project">
+            <div class="project-art music"><span>♪</span><span>♫</span><span>♪</span><small>tap to play</small></div>
+            <div class="project-info"><div><p class="project-number">03</p><h3>Music Band Page</h3><p>An animated, sound-focused web page made with HTML, CSS, and JavaScript.</p></div><a href="https://github.com/Praveenkumargs/Music-Band-webPage" target="_blank" rel="noreferrer">View source ↗</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div class="wrap contact-grid">
+          <div><p class="section-label">03 / CONTACT</p><h2>Let’s build<br />something <em>good.</em></h2><p class="body-copy">Have an opportunity, a project idea, or just want to connect? Send me a note.</p><div class="contact-links"><a href="mailto:praveenkumargs901@gmail.com">praveenkumargs901@gmail.com ↗</a><a href="tel:+919036723466">+91 90367 23466 ↗</a><a href="https://www.linkedin.com/in/praveen-kumargs/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/Praveenkumargs" target="_blank" rel="noreferrer">GitHub ↗</a></div></div>
+          <form id="contact-form" novalidate>
+            <label>Name<input name="name" autocomplete="name" minlength="2" required placeholder="Your name" /></label>
+            <label>Email<input name="email" type="email" autocomplete="email" required placeholder="you@email.com" /></label>
+            <label>Message<textarea name="message" minlength="10" required placeholder="Tell me a little about what’s on your mind"></textarea></label>
+            <button type="submit"><span>Send message</span><b>→</b></button>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap"><span>© 2026 Praveen Kumar</span><a href="#top">Back to top ↑</a></footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
